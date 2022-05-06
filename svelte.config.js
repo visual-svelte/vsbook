@@ -22,10 +22,7 @@ const config = {
 		sveltePreprocess(),
 		mdsvex({
 			extensions: ['.md'],
-			layout: {
-				essays: 'src/routes/essays/_style.svelte',
-				notes: 'src/routes/essays/_style.svelte'
-			}
+			layout: {}
 		})
 	]
 };

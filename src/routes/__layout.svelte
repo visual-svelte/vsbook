@@ -1,14 +1,26 @@
 <script>
 	import '../app.css';
-	import NavBar from '$components/NavBar.svelte';
+	import SidebarNav from '$components/site/SidebarNav.svelte';
+	import OnThisPage from '$components/site/OnThisPage.svelte';
+	import Footer from '$components/site/Footer.svelte';
+	import MobileNav from '$components/site/MobileNav.svelte';
 	import { dark } from '../stores/state';
+	let innerWidth;
 </script>
 
-<div class:dark={$dark}>
-	<main class="text-gray-800 dark:text-gray-100 dark:bg-gray-800">
-		<NavBar />
-		<div class="mx-2 dark:bg-gray-800">
+<svelte:window bind:innerWidth />
+
+	<div class="flex flex-row">
+		<aside class="h-screen max-w-[250px] sticky text-sm  overflow-x-hidden overflow-y-auto  top-0">
+			<SidebarNav />
+		</aside>
+
+		<main class="grow mx-auto max-w-[600px]">
+			<MobileNav class="lg:hidden" />
 			<slot />
-		</div>
-	</main>
-</div>
+			<Footer />
+		</main>
+		<aside class="h-screen w-[250px] text-sm sticky top-0 right-0"><OnThisPage /></aside>
+	</div>
+	<div class="container">
+		

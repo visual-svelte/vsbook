@@ -2,10 +2,13 @@ module.exports = {
 	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		container: {
+			center: true
+		},
 		extend: {
 			fontFamily: {
-				serif: ['"Source Serif Pro"', 'serif'],
-				other: ['"Nunito"', 'sans-serif']
+				head: ['"Libre Baskerville"', 'serif'],
+				main: ['"Roboto"', 'sans-serif']
 			}
 		}
 	},

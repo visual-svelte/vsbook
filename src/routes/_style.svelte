@@ -1,24 +1,20 @@
 <script>
 	export let title;
 	export let date;
-	import EmailSignup from '$components/EmailSignup.svelte';
+	// import EmailSignup from '$components/EmailSignup.svelte';
 
-	import { ago } from '../../utils/ago';
+	// import { ago } from '../../utils/ago';
 </script>
 
-<div class="wrap max-w-[600px] mx-auto pt-10">
-	<h1 class="text-xl text-center mb-2">{title}</h1>
-
-	<p class="text-sm text-center">Published: {ago(new Date(date))} ago</p>
-	<div class="border-b-2 mt-3 mb-10" />
-
+<div class="wrap">
 	<slot />
-	<!-- <EmailSignup /> -->
 </div>
 
 <style>
 	.wrap :global(*) {
 		font-family: 'Source Serif Pro';
+		max-width: 576px;
+		margin: 0 auto;
 	}
 	.wrap :global(ul) {
 		list-style-type: disc;
@@ -28,6 +24,7 @@
 		line-height: 2rem;
 	}
 	.wrap :global(h1) {
+		font-family: 'Libre Baskerville', sans-serif;
 		font-size: 2rem;
 		font-weight: 600;
 	}
@@ -45,6 +42,6 @@
 
 	.wrap :global(p) {
 		line-height: 2rem;
-		margin: 1rem 0px;
+		/* margin: 1rem 0px; */
 	}
 </style>

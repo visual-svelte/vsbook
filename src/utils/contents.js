@@ -7,47 +7,20 @@ const contents = [
 				name: 'Welcome'
 			},
 			{
-				href: '/',
-				name: 'Introduction'
-			}
-		]
-	},
-	{
-		title: 'Finding the story',
-		pages: [
-			{
-				href: '/',
-				name: 'Overview'
-			}
-		]
-	},
-	{
-		title: 'Story design',
-		pages: [
-			{
-				href: '/',
+				href: '/c1/introduction',
 				name: 'Introduction'
 			},
 			{
 				href: '/',
-				name: 'Figma'
+				name: 'Storytelling'
 			},
 			{
 				href: '/',
-				name: 'Tailwind CSS'
-			}
-		]
-	},
-	{
-		title: 'Data handling',
-		pages: [
-			{
-				href: '/',
-				name: 'Introduction'
+				name: 'Story design'
 			},
 			{
 				href: '/',
-				name: 'GitHub Flat'
+				name: 'Data handling'
 			}
 		]
 	},
@@ -55,16 +28,12 @@ const contents = [
 		title: 'Svelte out-of-the-box',
 		pages: [
 			{
-				href: '/',
+				href: '/c2/intro-to-svelte',
 				name: 'Introduction'
 			},
 			{
-				href: '/',
-				name: 'Under the hood'
-			},
-			{
-				href: '/',
-				name: 'Animation'
+				href: '/c2/the-svelte-toolbox',
+				name: 'The Svelte Toolkit'
 			}
 		]
 	},

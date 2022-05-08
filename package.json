@@ -22,6 +22,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
 		"feather-icons": "^4.29.0",
+		"mdast-util-to-string": "^3.1.0",
 		"mdsvex": "^0.10.5",
 		"postcss": "^8.4.12",
 		"prettier": "^2.5.1",
@@ -31,7 +32,8 @@
 		"svelte-motion": "^0.11.2",
 		"svelte-preprocess": "^4.10.6",
 		"swiper": "^8.1.4",
-		"tailwindcss": "^3.0.24"
+		"tailwindcss": "^3.0.24",
+		"unist-util-visit": "^4.1.0"
 	},
 	"type": "module"
 }

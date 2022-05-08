@@ -2,7 +2,7 @@
 	import MenuList from '$components/site/MenuList.svelte';
 </script>
 
-<div class="flex px-4 pt-4 pb-10 mb-10  min-h-full flex-col gap-2 w-full">
+<div class="flex px-4 pt-4 pb-10  min-h-full flex-col gap-2 w-full">
 	<img src="/svg/logo.svg" alt="" />
 	<a
 		href="/"

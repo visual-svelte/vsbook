@@ -4,6 +4,7 @@ import { mdsvex } from 'mdsvex';
 import sveltePreprocess from 'svelte-preprocess';
 import toc from '@jsdevtools/rehype-toc';
 import rehypeSlug from 'rehype-slug';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -25,7 +26,8 @@ const config = {
 			extensions: ['.svelte.md', '.md', '.svx'],
 			rehypePlugins: [rehypeSlug],
 			layout: {
-				c1: 'src/routes/_style.svelte'
+				c1: 'src/routes/_style.svelte',
+				c2: 'src/routes/_style.svelte'
 			}
 		}),
 

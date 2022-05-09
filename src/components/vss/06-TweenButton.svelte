@@ -40,12 +40,12 @@
 		const joinedInstructions = coords.reduce(
 			(acc, cur, i) => (i % 2 !== 0 ? acc + cur + 'L' : acc + cur + ','),
 			''
-		); // Not my prettiest line of code :)
+		);
 		return `M${joinedInstructions}Z`;
 	}
 </script>
 
-<WidgetContainer>
+<WidgetContainer url="http://github.com">
 	<div class="button-background" on:click={onToggle}>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.51786 279.81226" width="33">
 			<g transform="translate(-212.13203,-347.27573)">

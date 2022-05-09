@@ -7,7 +7,7 @@ const contents = [
 				name: 'Welcome'
 			},
 			{
-				href: '/c1/introduction',
+				href: '/vss/01-introduction',
 				name: 'Introduction'
 			},
 			{
@@ -25,15 +25,27 @@ const contents = [
 		]
 	},
 	{
-		title: 'Svelte out-of-the-box',
+		title: 'Svelte for Storytelling',
 		pages: [
 			{
-				href: '/c2/intro-to-svelte',
+				href: '/vss/05-svelte-intro',
 				name: 'Introduction'
 			},
 			{
-				href: '/c2/the-svelte-toolbox',
-				name: 'The Svelte Toolkit'
+				href: '/vss/06-motion',
+				name: "'svelte/motion'"
+			},
+			{
+				href: '/vss/07-transition',
+				name: "'svelte/transition'"
+			},
+			{
+				href: '/vss/08-animate',
+				name: "'svelte/animate'"
+			},
+			{
+				href: '/vss/09-svelte-window',
+				name: '<svelte:window>	'
 			}
 		]
 	},

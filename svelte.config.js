@@ -26,8 +26,7 @@ const config = {
 			extensions: ['.svelte.md', '.md', '.svx'],
 			rehypePlugins: [rehypeSlug],
 			layout: {
-				c1: 'src/routes/_style.svelte',
-				c2: 'src/routes/_style.svelte'
+				vss: 'src/routes/_style.svelte'
 			}
 		}),
 

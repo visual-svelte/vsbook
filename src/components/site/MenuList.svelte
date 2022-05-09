@@ -1,4 +1,6 @@
 <script>
+	import { page } from '$app/stores';
+	console.log($page.url.pathname);
 	import contents from '$utils/contents.js';
 	console.log(contents);
 	let ticker = 0;
@@ -27,9 +29,14 @@
 	>
 		{#each contents as section, i}
 			<div class="font-main flex min-w-44 flex-col   ">
-				<div class="font-bold">{section.title}</div>
-				{#each section.pages as page, j}
-					<a href={page.href} class="text-green-700 ml-2">{calc(i) + j} {page.name}</a>
+				<div class="font-semibold text-gray-500">{section.title}</div>
+				{#each section.pages as pageX, j}
+					<a
+						href={pageX.href}
+						class="text-gray-700 {pageX.href == $page.url.pathname
+							? 'font-bold text-black'
+							: ''} hover:font-bold duration-200 ml-2">{calc(i) + j} {pageX.name}</a
+					>
 				{/each}
 			</div>
 		{/each}

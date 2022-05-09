@@ -11,6 +11,11 @@
 <div class="wrap z-10">
 	<!-- {headings} -->
 	<slot />
+	<div class="buttons flex flex-row pt-16  pb-32">
+		<button class="w-64 border p-4">Previous</button>
+		<div class="grow" />
+		<button class="w-64 border p-4">Next</button>
+	</div>
 </div>
 
 <style>

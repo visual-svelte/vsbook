@@ -3,9 +3,10 @@
 	import * as easing from 'svelte/easing';
 	import { tweened, spring } from 'svelte/motion';
 	import { range } from 'd3-array';
-	import Select from '$components/helpers/Select.svelte';
-	import Slider from '$components/helpers/Slider.svelte';
-	import Icon from '$components/helpers/Icon.svelte';
+	import Select from '$components/site/Select.svelte';
+	import Slider from '$components/site/Slider.svelte';
+	import Icon from '$components/site/Icon.svelte';
+	import WidgetContainer from '$components/site/WidgetContainer.svelte';
 
 	let selectedTween = 'elasticOut';
 
@@ -46,9 +47,13 @@
 
 <WidgetContainer url="http://github.com">
 	<div class="container">
-		<button class="animate-button " on:click={updateStore}> Animate! </button>
-
-		<div class="controls">
+		<div class="controls relative">
+			<button
+				class="animate-button absolute left-[50%] -translate-x-[60%] py-2 px-4 font-bold border-2 bottom-0 translate-y-full "
+				on:click={updateStore}
+			>
+				Animate!
+			</button>
 			<div class="spring">
 				<div class="ctrl-title">SPRING</div>
 				Spring Stiffness: {(Math.round(stiffness[0] * 100) / 100).toFixed(2)}
@@ -76,9 +81,8 @@
 				<div class="tweens">
 					{#each $tween as bar, i}
 						<div
-							class="bar tween"
-							style="height:{8}px; width:{bar *
-								6}px; clear:both;background-color:var(--dragon);opacity:{1 -
+							class="bar tween right-0"
+							style="height:{8}px; width:{bar * 6}px; background-color:purple;opacity:{1 -
 								i / 20}; transform:translate(30px,{10 * i}px);"
 						/>
 					{/each}
@@ -88,7 +92,7 @@
 						<div
 							class="bar"
 							style="height:{8}px; width:{bar *
-								6}px; clear:both;background-color:var(--dark);opacity:{1 -
+								6}px; clear:both;background-color:rgb(49, 49, 49);opacity:{1 -
 								i / 20};transform:translate(30px,{10 * i}px);"
 						/>
 					{/each}
@@ -98,87 +102,69 @@
 	</div>
 </WidgetContainer>
 
-<style lang="scss">
+<style>
 	.container {
 		position: relative;
 		height: 350px;
-		.animate-button {
-			background-color: white;
-			border-radius: 100%;
-			z-index: 100;
-			cursor: pointer;
-			position: absolute;
-			padding: 10px 20px;
-			top: 170px;
-			left: 102px;
-		}
-		.ctrl-title {
-			border-bottom: 1px solid white;
-			font-weight: 600;
-			text-align: center;
-			padding: 1px 0px 3px 0px;
-			margin-bottom: 5px;
-		}
-		.controls {
-			font-size: 0.7rem;
-			height: 150px;
-			width: 300px;
-			position: relative;
-			.spring {
-				max-width: 140px;
-				min-width: 140px;
-				height: 170px;
-				left: 150px;
-				position: absolute;
-				background-color: var(--dark);
-				color: white;
-				padding: 5px;
-				border-top-right-radius: 20px;
-			}
-			.tween {
-				border-top-left-radius: 20px;
-				position: absolute;
-				background-color: var(--dragon);
-				color: white;
-				width: 140px;
-				height: 170px;
-				padding: 5px;
-			}
-		}
-		.axis {
-			margin-top: 15px;
-			position: absolute;
-			//   border-left: 1px solid black;
-			// border-top: 1px solid black;
-			height: 100px;
-			width: 300px;
-			overflow: hidden;
-		}
-		.bar-wrapper {
-			position: relative;
-			// overflow: hidden;
-			margin-top: 40px;
-			width: 300px;
-			height: 150px;
-			.tweens {
-				position: absolute;
-				border-left: 1px solid gray;
-				left: 100px;
-			}
-			.springs {
-				// left: 200px;
-				position: absolute;
-				right: 160px;
-				border-left: 1px solid gray;
-			}
-			.bar {
-				position: absolute;
-				display: flex;
-				//   opacity: 0.2;
-				&.tween {
-					right: 0px;
-				}
-			}
-		}
+	}
+	.animate-button {
+		background-color: white;
+		border-radius: 100%;
+		z-index: 100;
+		cursor: pointer;
+	}
+	.ctrl-title {
+		border-bottom: 1px solid white;
+		font-weight: 600;
+		text-align: center;
+		padding: 1px 0px 3px 0px;
+		margin-bottom: 5px;
+	}
+	.controls {
+		font-size: 0.7rem;
+		height: 150px;
+		width: 300px;
+		position: relative;
+	}
+	.spring {
+		max-width: 140px;
+		min-width: 140px;
+		height: 170px;
+		left: 150px;
+		position: absolute;
+		background-color: rgb(49, 49, 49);
+		color: white;
+		padding: 5px;
+		border-top-right-radius: 20px;
+	}
+	.controls .tween {
+		border-top-left-radius: 20px;
+		position: absolute;
+		background-color: purple;
+		color: white;
+		width: 140px;
+		height: 170px;
+		padding: 5px;
+	}
+
+	.bar-wrapper {
+		position: relative;
+		margin-top: 40px;
+		width: 300px;
+		height: 150px;
+	}
+	.tweens {
+		position: absolute;
+		border-left: 1px solid gray;
+		left: 100px;
+	}
+	.springs {
+		position: absolute;
+		right: 160px;
+		border-left: 1px solid gray;
+	}
+	.bar-wrapper .bar {
+		position: absolute;
+		display: flex;
 	}
 </style>

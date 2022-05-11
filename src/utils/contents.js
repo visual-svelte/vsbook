@@ -53,19 +53,19 @@ const contents = [
 		title: 'Charts',
 		pages: [
 			{
-				href: '/',
+				href: '/vss/10-charts-intro',
 				name: 'Introduction'
 			},
 			{
-				href: '/',
+				href: '/vss/11-svg-canvas',
 				name: 'SVG and Canvas'
 			},
 			{
-				href: '/',
+				href: '/vss/12-layercake',
 				name: 'Layercake'
 			},
 			{
-				href: '/',
+				href: '/vss/13-d3',
 				name: 'D3'
 			}
 		]

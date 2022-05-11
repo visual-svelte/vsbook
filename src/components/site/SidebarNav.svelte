@@ -10,7 +10,7 @@
 	<a
 		href="/"
 		rel="internal"
-		class="hover:underline cursor-pointer font-head w-64 overflow-x-hidden font-bold text-lg pt-4 mt-4 "
+		class="hover:underline cursor-pointer font-head w-56  overflow-x-hidden font-bold text-lg pt-4 mt-4 "
 	>
 		Visual Storytelling with Svelte
 	</a>

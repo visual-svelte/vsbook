@@ -1,6 +1,6 @@
 # SVELTE for Storytelling
 
-In this section, I will briefly introduce Svelte; the mechanics of  outline what Svelte is and how it can help us build visual stories.
+In this section, I will briefly introduce Svelte; the mechanics of outline what Svelte is and how it can help us build visual stories.
 
 Svelte comes with lots of functionality to help us create interactive stories.
 

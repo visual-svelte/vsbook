@@ -19,17 +19,21 @@ In this section, I'll be going beyond the basic transition, to try to re-create 
 
 Here's a GIF showing the target, i.e. what I was aiming to reproduce with Svelte and `svelte/transition`.
 
+<div class="py-10">
+<figure >
 <img width="400px"
       src="/images/migrant.gif"
       alt="bbc newsnight gif showing the data visualisation"
     />
 
-<figcaption class="text-center">
+<figcaption class="text-center ">
 Source: <a
         href="https://twitter.com/BBCNewsnight/status/1514361598156099584"
         >BBC Newsnight Twitter</a
       >
 </figcaption>
+<figure>
+</div>
 
 And this is what I settled on (explained in detail below):
 <ChartTransitions/>

@@ -11,7 +11,7 @@
 <div class="wrap z-10">
 	<!-- {headings} -->
 	<slot />
-	<div class="buttons flex flex-row pt-16  pb-32">
+	<div class="buttons flex flex-row flex-wrap pt-16  pb-32">
 		<button class="w-64 border p-4">Previous</button>
 		<div class="grow" />
 		<button class="w-64 border p-4">Next</button>
@@ -87,7 +87,14 @@
 		padding: 0.4rem 0;
 		/* margin: 1rem 0px; */
 	}
+	.wrap :global(pre) {
+		max-width: 90vw;
+		margin: 0 auto;
+		width: 600px;
+		font-size: 0.9rem;
 
+		padding: 10px;
+	}
 	.wrap :global(code) {
 		background-color: #282c3415;
 		padding: 2px 4px;

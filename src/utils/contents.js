@@ -44,8 +44,8 @@ const contents = [
 				name: "'svelte/animate'"
 			},
 			{
-				href: '/vss/09-svelte-window',
-				name: '<svelte:window>	'
+				href: '/vss/09-interaction',
+				name: 'Interaction'
 			}
 		]
 	},

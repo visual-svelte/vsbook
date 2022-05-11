@@ -3,8 +3,8 @@
 	import Icon from '$components/site/Icon.svelte';
 </script>
 
-<div class="pt-6">
-	<div class="bg-[#FF3E00] no-underline bg-opacity-10 p-2 rounded-xl relative">
+<div class="py-6 ">
+	<div class="bg-[#FF3E00] shadow-lg no-underline bg-opacity-5 p-2 rounded-xl relative">
 		<div
 			class="select-none cursor-pointer px-3  bg-[#565656] font-main absolute text-sm rounded-t-lg text-white right-2 -top-8"
 		>

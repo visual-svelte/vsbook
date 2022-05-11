@@ -93,4 +93,13 @@
 		padding: 2px 4px;
 		border-radius: 5px;
 	}
+
+	.wrap :global(.full-width) {
+		width: 90vw;
+		position: relative;
+		left: 65%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+	}
 </style>

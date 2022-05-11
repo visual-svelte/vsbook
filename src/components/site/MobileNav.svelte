@@ -7,7 +7,7 @@
 	}
 </script>
 
-<div class="flex font-head relative z-10 py-4 items-center">
+<div class="flex font-head relative z-20 py-4 items-center">
 	<div class=" text-left grow text-xl font-bold">Visual Storytelling with Svelte</div>
 	<div
 		on:click={handleMenuClick}

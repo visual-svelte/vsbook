@@ -1,8 +1,8 @@
 # SVELTE for Storytelling
 
-Svelte comes with lots of functionality to help us create interactive stories.
+In this section, I will briefly introduce Svelte; the mechanics of  outline what Svelte is and how it can help us build visual stories.
 
-In this section, I will briefly outline what Svelte is and how it can help us build visual stories.
+Svelte comes with lots of functionality to help us create interactive stories.
 
 In the rest of the mini-chapters in this section, I focus on specific packages that come out-the-box with Svelte.
 

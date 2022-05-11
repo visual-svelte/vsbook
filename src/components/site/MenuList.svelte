@@ -1,14 +1,11 @@
 <script>
 	import { page } from '$app/stores';
-	console.log($page.url.pathname);
 	import contents from '$utils/contents.js';
-	console.log(contents);
 	let ticker = 0;
 
 	let lengths = contents.map((sec) => {
 		return sec.pages.length;
 	});
-	console.log('len', lengths);
 
 	function calc(sec) {
 		let result = 0;

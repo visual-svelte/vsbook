@@ -37,7 +37,7 @@
 	}
 
 	function coordsToPath(coords) {
-		const joinedInstructions = coords.reduce(
+	const joinedInstructions = coords.reduce(
 			(acc, cur, i) => (i % 2 !== 0 ? acc + cur + 'L' : acc + cur + ','),
 			''
 		);

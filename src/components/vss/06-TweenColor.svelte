@@ -16,7 +16,7 @@
 </script>
 
 <WidgetContainer url="http://github.com">
-	<div class="flex flex-row">
+	<div class="flex flex-row items-center">
 		<div class="flex flex-col">
 			{#each colors as c}
 				<button

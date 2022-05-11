@@ -14,6 +14,7 @@ export const components = [
 	() => import("..\\..\\src\\routes\\vss\\07-charts-intro.md"),
 	() => import("..\\..\\src\\routes\\vss\\07-svelte-toolkit.md"),
 	() => import("..\\..\\src\\routes\\vss\\07-transition.md"),
+	() => import("..\\..\\src\\routes\\vss\\08-animate.md"),
 	() => import("..\\..\\src\\routes\\vss\\08-svg-and-canvas.md"),
 	() => import("..\\..\\src\\routes\\vss\\09-layercake.md"),
 	() => import("..\\..\\src\\routes\\vss\\10-d3.md"),
@@ -34,10 +35,11 @@ export const dictionary = {
 	"vss/07-charts-intro": [[0, 10], [1]],
 	"vss/07-svelte-toolkit": [[0, 11], [1]],
 	"vss/07-transition": [[0, 12], [1]],
-	"vss/08-svg-and-canvas": [[0, 13], [1]],
-	"vss/09-layercake": [[0, 14], [1]],
-	"vss/10-d3": [[0, 15], [1]],
-	"vss/11-maps-intro": [[0, 16], [1]],
-	"vss/12-d3-geo": [[0, 17], [1]],
-	"vss/13-leaflet": [[0, 18], [1]]
+	"vss/08-animate": [[0, 13], [1]],
+	"vss/08-svg-and-canvas": [[0, 14], [1]],
+	"vss/09-layercake": [[0, 15], [1]],
+	"vss/10-d3": [[0, 16], [1]],
+	"vss/11-maps-intro": [[0, 17], [1]],
+	"vss/12-d3-geo": [[0, 18], [1]],
+	"vss/13-leaflet": [[0, 19], [1]]
 };

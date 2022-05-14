@@ -7,7 +7,7 @@
 	}
 </script>
 
-<div class="flex font-head relative z-20 py-4 items-center">
+<div class="flex font-head relative z-40 py-4 items-center">
 	<div class=" text-left grow text-xl font-bold">Visual Storytelling with Svelte</div>
 	<div
 		on:click={handleMenuClick}
@@ -18,7 +18,7 @@
 	{#if menuOpen}
 		<div
 			on:click={handleMenuClick}
-			class="shadow-xl overflow-hidden top-14 absolute right-4 max-w-[500px] ml-4 border-2 rounded-xl bg-white text-sm "
+			class="shadow-xl overflow-hidden top-14 absolute right-0 max-w-[500px] ml-4 border-2 rounded-xl bg-white text-sm "
 		>
 			<MenuList />
 		</div>

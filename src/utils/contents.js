@@ -3,87 +3,46 @@ const contents = [
 		title: 'Table of Contents',
 		pages: [
 			{
-				href: '/',
-				name: 'Welcome'
-			},
-			{
 				href: '/vss/01-introduction',
 				name: 'Introduction'
-			},
-			{
-				href: '/',
-				name: 'Storytelling'
-			},
-			{
-				href: '/',
-				name: 'Story design'
-			},
-			{
-				href: '/',
-				name: 'Data handling'
 			}
 		]
 	},
 	{
-		title: 'Svelte for Storytelling',
+		title: 'Svelte',
 		pages: [
 			{
-				href: '/vss/05-svelte-intro',
+				href: '/',
 				name: 'Introduction'
 			},
 			{
-				href: '/vss/06-motion',
+				href: '/',
+				name: 'Interaction'
+			},
+			{
+				href: '/',
 				name: "'svelte/motion'"
 			},
 			{
-				href: '/vss/07-transition',
+				href: '/',
 				name: "'svelte/transition'"
 			},
 			{
-				href: '/vss/08-animate',
+				href: '/',
 				name: "'svelte/animate'"
-			},
-			{
-				href: '/vss/09-interaction',
-				name: 'Interaction'
 			}
 		]
 	},
 	{
-		title: 'Charts',
-		pages: [
-			{
-				href: '/vss/10-charts-intro',
-				name: 'Introduction'
-			},
-			{
-				href: '/vss/11-svg-canvas',
-				name: 'SVG and Canvas'
-			},
-			{
-				href: '/vss/12-layercake',
-				name: 'Layercake'
-			},
-			{
-				href: '/vss/13-d3',
-				name: 'D3'
-			}
-		]
-	},
-	{
-		title: 'Maps',
+		title: 'Graphics',
 		pages: [
 			{
 				href: '/',
-				name: 'Introduction'
+				name: 'Charts'
 			},
 			{
 				href: '/',
-				name: 'D3 Geo'
-			},
-			{
-				href: '/',
-				name: 'Leaflet'
+				name: 'Maps'
 			}
 		]
 	},
@@ -92,92 +51,54 @@ const contents = [
 		pages: [
 			{
 				href: '/',
-				name: 'Introduction'
-			},
-			{
-				href: '/',
 				name: 'Scrollytelling'
 			},
 			{
 				href: '/',
-				name: 'Explaining Charts'
+				name: 'Mobile-first'
 			},
 			{
 				href: '/',
-				name: 'Morphing'
+				name: 'Accessibility'
+			},
+			{
+				href: '/',
+				name: 'Testing'
 			}
 		]
 	},
+
 	{
-		title: 'Mobile',
+		title: 'BONUS MATERIAL',
 		pages: [
 			{
 				href: '/',
-				name: 'Introduction'
+				name: 'Self-explaining charts'
 			},
 			{
 				href: '/',
-				name: 'Mobile techniques'
+				name: 'Chart Morphing'
+			},
+			{
+				href: '/',
+				name: 'Svelte under-the-hood'
 			}
-		]
-	},
-	{
-		title: 'Accessibility',
-		pages: [
-			{
-				href: '/',
-				name: 'Introduction'
-			},
-			{
-				href: '/',
-				name: 'Accessible Scrollytelling'
-			},
-			{
-				href: '/',
-				name: 'Animations'
-			},
-			{
-				href: '/',
-				name: 'Colours'
-			},
-			{
-				href: '/',
-				name: 'Non-JS Charts'
-			}
-		]
-	},
-	{
-		title: 'Quality',
-		pages: [
-			{
-				href: '/',
-				name: 'Introduction'
-			},
-			{
-				href: '/',
-				name: 'Testing your components'
-			}
-		]
-	},
-	{
-		title: 'APPENDIX',
-		pages: [
-			{
-				href: '/',
-				name: 'A1 Data wranging with Lodash'
-			},
-			{
-				href: '/',
-				name: 'A2 3d Storytelling'
-			},
-			{
-				href: '/',
-				name: 'A3 Figma Story Design'
-			},
-			{
-				href: '/',
-				name: 'A4 Optimizing for speed'
-			}
+			// {
+			// 	href: '/',
+			// 	name: 'A1 Data wranging with Lodash'
+			// },
+			// {
+			// 	href: '/',
+			// 	name: 'A2 3d Storytelling'
+			// },
+			// {
+			// 	href: '/',
+			// 	name: 'A3 Figma Story Design'
+			// },
+			// {
+			// 	href: '/',
+			// 	name: 'A4 Optimizing for speed'
+			// }
 		]
 	}
 ];
